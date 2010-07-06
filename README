@@ -1,0 +1,12 @@
+If you're having font problems in gvim, see here: http://vim.wikia.com/wiki/The_perfect_programming_font
+  Solution is to cd to ~/.fonts and run fc-cache
+
+The .gitconfig should instead be .git/info/exclude (so you don't exclude everything from all repos IN home), and should look as follows
+
+* # exclude everything
+!.* # include all dotfiles
+# exclude all dotfiles that you don't want to version
+!.vim/*
+!.vim
+!*.vim
+!README
